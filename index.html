@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Mimimi-ficador 5000</title>
+   <link rel="shortcut icon" href="src/jh-shortcut.png">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="@JhosepDev" />
+   <meta name="twitter:title" content="Mimimi-ficador" />
+   <meta name="twitter:description" content="Contestale a esa persona molesta con el mimi mimimi que se merece." />
+   <meta name="twitter:image" content="/src/mimimificador-art.png" />
+
+   <!-- Facebbok  Open Graph -->
+   <meta property="og:url" content="" />
+   <meta property="og:type" content="" />
+   <meta property="og:title" content="Mimimi-ficador" />
+   <meta property="og:description" content="Contestale a esa persona molesta con el mimi mimimi que se merece." />
+  <meta property="og:image" content="/src/mimimificador-art.png">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+   <!-- Fontawesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+   integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+   <div class="wrap">
+      <div class="imagen">
+         <img src="https://pbs.twimg.com/media/CW1qEGcXAAAds3L.jpg" alt="chinito meme">
+      </div>
+
+      <div class="copy">
+         <h1>Mimimi-ficador 5000</h1>
+         <p>
+            Ahora ya puedes contestarle a esa persona molesta con el <strong>"mimi mimimi"</strong> que se merece.
+         </p>
+      </div>
+
+      <div class="container">
+         <form>
+            <textarea class="input" id="texto" placeholder="Tu texto normal por aquí:"></textarea>
+
+            <textarea class="input" id="texto-mimimi" placeholder="Ti tixti mimimifiquidi pir iqui."></textarea>
+
+            <input type="button" class="btn" onclick="mimimificar();" value="Mimimificar">
+         </form>
+      </div>
+
+      <div class="redes-sociales">
+         <a href="https://www.facebook.com/JhWebServices/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.instagram.com/jhosep.dev/" target="_blank">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+   </div>
+
+
+   
+   <script>
+   
+   function mimimificar() {
+
+      texto = document.getElementById('texto').value;
+      texto = texto.replace(/a/gi, "i");
+      texto = texto.replace(/e/gi, "i");
+      texto = texto.replace(/i/gi, "i");
+      texto = texto.replace(/o/gi, "i");
+      texto = texto.replace(/u/gi, "i");
+      texto = texto.replace(/y/gi, "i");
+
+      document.getElementById('texto-mimimi').innerHTML=texto;
+   }
+   
+   </script>
+ 
+</body>
+
+</html>
