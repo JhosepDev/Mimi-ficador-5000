@@ -16,11 +16,11 @@
    <meta name="twitter:image" content="/src/mimimificador-art.png" />
 
    <!-- Facebbok  Open Graph -->
-   <meta property="og:url" content="" />
+   <meta property="og:url" content="https://jhosepdev.github.io/Mimi-ficador-5000/" />
    <meta property="og:type" content="" />
    <meta property="og:title" content="Mimimi-ficador" />
    <meta property="og:description" content="Contestale a esa persona molesta con el mimi mimimi que se merece." />
-  <meta property="og:image" content="/src/mimimificador-art.png">
+   <meta property="og:image" content="/src/mimimificador-art.png">
 
    <!-- CSS -->
    <link rel="stylesheet" href="style.css">
@@ -30,11 +30,12 @@
 
    <!-- Fontawesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-   integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 </head>
 
 <body>
+   <div class="background"></div>
 
    <div class="wrap">
       <div class="imagen">
@@ -69,24 +70,29 @@
    </div>
 
 
-   
    <script>
-   
-   function mimimificar() {
 
-      texto = document.getElementById('texto').value;
-      texto = texto.replace(/a/gi, "i");
-      texto = texto.replace(/e/gi, "i");
-      texto = texto.replace(/i/gi, "i");
-      texto = texto.replace(/o/gi, "i");
-      texto = texto.replace(/u/gi, "i");
-      texto = texto.replace(/y/gi, "i");
+      function mimimificar() {
 
-      document.getElementById('texto-mimimi').innerHTML=texto;
-   }
-   
+         texto = document.getElementById('texto').value;
+         texto = texto.replace(/a/gi, "i");
+         texto = texto.replace(/e/gi, "i");
+         texto = texto.replace(/i/gi, "i");
+         texto = texto.replace(/o/gi, "i");
+         texto = texto.replace(/u/gi, "i");
+         texto = texto.replace(/y/gi, "i");
+
+         texto = texto.replace(/á/gi, "í");
+         texto = texto.replace(/é/gi, "í");
+         texto = texto.replace(/í/gi, "í");
+         texto = texto.replace(/ó/gi, "í");
+         texto = texto.replace(/ú/gi, "í");
+
+         document.getElementById('texto-mimimi').innerHTML = texto;
+      }
+
    </script>
- 
+
 </body>
 
 </html>
