@@ -13,10 +13,18 @@ body {
    align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+
+   body {
+     height: auto;
+   }
+}
+
 .background {
    width: 100%;
    height: 100%;
    position: relative;
+   bottom: 0;
    z-index: -1;
    background-image: url("./src/fondo.svg");
    background-repeat: no-repeat;
@@ -25,6 +33,7 @@ body {
    background-attachment: fixed;
    position: fixed;
 }
+
 
 .wrap {
    width: auto;
@@ -63,7 +72,7 @@ body {
    padding: 0 .5em;
 }
 
-.container {
+.container-form {
    max-width: 350px;
    padding: 1em;
    
